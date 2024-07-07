@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>MY Portfolio</title>
+
+	<!--boxicons link-->
+	 <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--Header Section-->
+	<header>
+		<a href="#" class="logo"><span>J</span>M</a>
+
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="project.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="videoDemo.html">VideoDemo</a></li>
+			<li><a href="sitereport.html">SiteReport</a></li>
+		</ul>
+
+		<div class="menu-btn">
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+	 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	    <script>
+	    	let menu = document.querySelector('#menu-icon');
+		    let navbar = document.querySelector('.navbar');
+
+		    menu.onclick = () => {
+		    	menu.classList.toggle('bx-x');
+			    navbar.classList.toggle('open')
+			}
+		</script>
+	<!--sitereport section-->
+	<section class="SiteReport">
+		<h1>Site Report</h1>
+		<article>
+		        <h2>Introduction</h2>
+		        <p>This report details the development and design process of web assignment.The assignment involved creating a responsive website that includes index, contact, projects, videodemo and site report.This report covers the experience and challenges encountered during the assignmnet.</p>
+	    </article>
+	    <article>
+	    	<h2>Developent Experience</h2>
+	    	<p>Throughout the term, I gained significant insights into web development, particullarly in HTML and CSS.Coding the assignment involved understanding the intricacies of responsive design, ensuring the website works sleamlessly across various devices.
+	    	Debugging was challenging, especially when dealing with CSS inconsistencies across different browsers.However, the experience was rewarding as i could troubleshoot and resolve issues effectively.</p>
+	    </article>
+	    <article>
+	    	<h2>Module Experience Reflection</h2>
+	    	<p>The module provided a comprehensive understanding of web development principles.I appreciarted the hands-on approach, which
+	    	allowed me to apply theoritical knowledge practically.It helped refine my skills and improve the assignment.</p>
+	    </article>
+	    <article>
+	    	<h2>Site Development</h2>
+	    	<p>The site's development started with wireframing and planning the user interface(UI). The technical implementaton involved coding the HTML strucure, applying CSS for styling and using JavaScript for interactivity.Key milestones included setting up the navigation menu, ensuring mobile responsivness, and integrating the video demonstration.</p>
+	    </article>
+	    <article>
+	    	<h2>Design Decision</h2>
+	    	<p>The design choices were influenced by modern web design trends. I opted for a clean and minimalist layout, using sans-serif fonts for readability. The color scheme was chosen to be visually appealing yet accessible. Resources like Google Fonts and color palette generators were invaluable in making these decisions.</p>
+	    </article>
+	    <article>
+            <h2>Validation Reports</h2>
+            <p>Ensuring the code adhered to web standards was crucial. Screenshots of the HTML and CSS validation reports are included below, showing that the pages passed validation checks successfully. This step was essential to ensure cross-browser compatibility and maintain a high standard of code quality.</p>
+            <img src="file:///Users/madenjeeson/Desktop/index.png" alt="myscreenshots" class="Screenshots">
+
+        </article>
+    </section>
+</body>
+</html>

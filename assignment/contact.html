@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <title>MY Portfolio</title>
+
+	   <!--boxicons link-->
+	   <link rel="stylesheet"
+       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+       <!--google fonts link-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+		  <a href="#" class="logo"><span>J</span>M</a>
+
+		  <ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="project.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="videoDemo.html">VideoDemo</a></li>
+			<li><a href="sitereport.html">SiteReport</a></li>
+		  </ul>
+
+		  <div class="menu-btn">
+			  <div class="bx bx-menu" id="menu-icon"></div>
+		  </div>
+	    </header> 
+
+	    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	     <script>
+	     	  let menu = document.querySelector('#menu-icon');
+		      let navbar = document.querySelector('.navbar');
+
+		      menu.onclick = () => {
+		    	  menu.classList.toggle('bx-x');
+			      navbar.classList.toggle('open')
+			  } 
+		 </script>
+
+	    <!--contact-section-->
+	    <div class="contact-container" id="contact">
+	    	<div>
+	    		<h1>Contact <span>Me</span></h1>
+	    		<p>I'm here to answer any questions you may have.</p>
+	    	</div>
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+            <!--contact-info-->
+            <section class="contact-info">
+                <h2>Contact Info</h2>
+                <div class="info">
+                   Phone: <a href="tel:0000000000">+977 9818467132</a><br>
+                   Email: <a href="mailto:jeeson219@gmail.com">jeeson219@gmail.com</a>
+                </div>
+           </section>
+        </div>
+    </body>
+</html>
